@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ascii colors
+# ansi escape codes
 RED='\033[1;35m'
 NC='\033[0m'
 YL='\033[1;33m'
