@@ -11,6 +11,7 @@ BL='\033[0;34m'
 
 function make_dir() {
   echo "Creating folder please wait"
+  mkdir "dirname"
 }
 
 function make_file() {

@@ -1,14 +1,14 @@
 #!/bin/bash
 
-#       .------------------------- constant part!
+# colors
 RED='\033[0;31m'
 WH='\033[1;35m'
 NC='\033[0m'
 YL='\033[1;33m'
 BL='\033[0;34m'
 
-#     ------------------------------Database setup
-echo -e "${}Creating dataBase please wait...."
+# Database setup
+echo -e "${1}Creating dataBase please wait...."
 
 read -r -p "Enter database name: " db_name
 
@@ -24,7 +24,6 @@ if [[ "$db_name" =~ ^[a-z] ]]; then
 else
 
   echo -e "${RED}Please use letters only!"
-  # shellcheck disable=SC2242
   exit 1
 
 fi
